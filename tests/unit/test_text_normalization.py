@@ -95,7 +95,7 @@ def test_remove_stopwords(stop_words_list):
     doc_stop = "He is a very good person"
     good_stop = "good person"
 
-    assert good_stop == remove_stopwords(doc_stop, True, stopwords=stop_words_list)
+    assert good_stop == remove_stopwords(doc_stop, stopwords=stop_words_list)
 
 
 def test_remove_extra_new_lines():
